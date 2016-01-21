@@ -6,7 +6,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = {
   context: __dirname,                                   // input path
   devtool: 'inline-source-map',
-  entry: [                                              // entry point
+  entry: [                                              // webpack will start consuming from these file(s)
     'webpack-hot-middleware/client',
     './app/index.jsx'
   ],
@@ -16,7 +16,7 @@ module.exports = {
     publicPath: '/'
   },
   resolve: {
-    extensions: ['', '.jsx', '.scss', '.js', '.json'],  // file(s) to watch
+    extensions: ['', '.jsx', '.scss', '.js', '.json'],  // along the way, subsequent file(s) to be consumed by webpack
     modulesDirectories: [
       'node_modules',
       path.resolve(__dirname, './node_modules')
