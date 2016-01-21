@@ -1,6 +1,4 @@
 # react-flexbox-grid-example
-Example using react-flexbox-grid
-
 
 ###Getting Started
 1. Clone this repository
