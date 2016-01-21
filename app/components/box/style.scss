@@ -1,0 +1,54 @@
+.box {
+  position: relative;
+  box-sizing: border-box;
+  min-height: 1rem;
+  margin-bottom: 0;
+  background: #007FFF;
+  border: 1px solid #FFF;
+  border-radius: 2px;
+  overflow: hidden;
+  text-align: center;
+  color: #fff;
+}
+
+.row {
+  composes: box;
+  margin-bottom: 1rem;
+}
+
+.container {
+  composes: box;
+  box-sizing: border-box;
+  padding: .5em;
+}
+
+.nested {
+  composes: box;
+  background: #036;
+  border-color: #007FFF;
+}
+
+.large {
+  composes: box;
+  height: 8rem;
+}
+
+@media only screen and (min-width: 48rem) {
+
+  .box {
+    padding: 1rem;
+  }
+
+  .row {
+    padding: 1rem;
+  }
+  .container {
+    padding: 1rem;
+  }
+  .nested {
+    padding: 1rem;
+  }
+  .large {
+    padding: 1rem;
+  }
+}
